@@ -8,7 +8,7 @@
 - 🧩 Languages: 3
 
 
-This repository contains my solutions to LeetCode problems, organized by difficulty. Each solution includes code and, where helpful, explanations and complexity analysis.
+This repository contains my solutions to LeetCode problems for the Top Interview 150 Questions, organized by difficulty. Each solution includes code, a short explanation to the solution, and complexity analysis.
 
 ## 📊 Stats
 - Problems Solved: 3
