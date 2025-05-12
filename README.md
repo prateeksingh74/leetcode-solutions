@@ -3,8 +3,8 @@
 This repository contains my solutions to LeetCode problems, organized by difficulty. Each solution includes code and, where helpful, explanations and complexity analysis.
 
 ## 📊 Stats
-- Problems Solved: 3 (to start)
-- Languages: C, Python, Java
+- Problems Solved: 3
+- Languages: 3
 - Goal: Solve 200+ questions by July 12
 
 ## 🗂️ Folders
