@@ -1,0 +1,79 @@
+name: 🛠️ Update README Stats
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v3
+
+      - name: Build README Sections
+        run: |
+          EASY=$(find easy -type f 2>/dev/null | wc -l)
+          MEDIUM=$(find medium -type f 2>/dev/null | wc -l)
+          HARD=$(find hard -type f 2>/dev/null | wc -l)
+          TOTAL=$((EASY + MEDIUM + HARD))
+          LANGS=$(find easy medium hard -type f 2>/dev/null | sed 's/.*\.//' | sort -u | wc -l)
+
+          GOAL=150
+          PERCENT=$((TOTAL * 100 / GOAL))
+          DONE_BLOCKS=$((PERCENT / 5))
+          EMPTY_BLOCKS=$((20 - DONE_BLOCKS))
+          BAR=$(printf "%${DONE_BLOCKS}s" | tr ' ' '▓')$(printf "%${EMPTY_BLOCKS}s" | tr ' ' '░')
+
+          cat <<EOF > stats_section.md
+<!-- STATS_START -->
+## 📊 Stats
+- 🔢 Problems Solved: $TOTAL / $GOAL
+  - 🟢 Easy: $EASY
+  - 🟠 Medium: $MEDIUM
+  - 🔴 Hard: $HARD
+- 🧩 Languages: $LANGS
+- 🎯 Goal: Top 150 LeetCode Problems
+  - $BAR $TOTAL/$GOAL (${PERCENT}%)
+<!-- STATS_END -->
+EOF
+
+          cat <<EOF > tracker_section.md
+<!-- TRACKER_START -->
+## 📅 Progress Tracker
+| # | Title | Difficulty | Language | Status |
+|---|-------|------------|----------|--------|
+EOF
+
+          for f in $(find easy medium hard -type f); do
+            NUM=$(echo $f | sed -E 's/.*\/([0-9]+)-.*/\1/')
+            TITLE=$(echo $f | sed -E 's/.*\/[0-9]+-([a-z0-9\-]+)\..*/\1/' | sed 's/-/ /g' | sed 's/\b\(.\)/\u\1/g')
+            DIFFICULTY=$(echo $f | cut -d/ -f1 | tr '[:lower:]' '[:upper:]')
+            LANG=$(echo $f | awk -F. '{print $NF}' | tr '[:lower:]' '[:upper:]')
+            echo "| $NUM | $TITLE | $DIFFICULTY | $LANG | ✅ |" >> tracker_section.md
+          done
+
+          echo "<!-- TRACKER_END -->" >> tracker_section.md
+
+      - name: Update README.md
+        run: |
+          sed -i '/<!-- STATS_START -->/,/<!-- STATS_END -->/d' README.md
+          sed -i '/^# .*$/a <!-- STATS_START -->\n<!-- STATS_END -->' README.md
+          sed -i "/<!-- STATS_START -->/r stats_section.md" README.md
+
+          sed -i '/<!-- TRACKER_START -->/,/<!-- TRACKER_END -->/d' README.md
+          echo -e "\n<!-- TRACKER_START -->\n<!-- TRACKER_END -->" >> README.md
+          sed -i "/<!-- TRACKER_START -->/r tracker_section.md" README.md
+
+      - name: Commit and Push
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add README.md
+          git commit -m "🧮 Auto-update stats and progress tracker"
+          git push
+
