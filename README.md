@@ -1,29 +1,14 @@
 # LeetCode Solutions by Prateek Singh
 
+This repository contains my solutions to LeetCode problems for the Top Interview 150 Questions, organized by difficulty. Each solution includes code, a short explanation to the solution, and complexity analysis.
+
 ## 📊 Stats
 - 🔢 Problems Solved: 4
   - 🟢 Easy: 2
   - 🟠 Medium: 1
   - 🔴 Hard: 1
 - 🧩 Languages: 3
-
-
-## 📊 Stats
-
-
-## 📊 Stats
-
-
-## 📊 Stats
-
-
-This repository contains my solutions to LeetCode problems for the Top Interview 150 Questions, organized by difficulty. Each solution includes code, a short explanation to the solution, and complexity analysis.
-
-## 📊 Stats
-- Problems Solved: 3
-- Languages: 3
-- Goal: Solve 200+ questions by July 12
-
+  
 ## 🗂️ Folders
 - `easy/` – beginner-level problems
 - `medium/` – intermediate challenges
@@ -38,6 +23,6 @@ Each file is named as:
 ## 📅 Progress Tracker
 | # | Title | Difficulty | Language | Status |
 |---|-------|------------|----------|--------|
-| 1 | Two Sum | Easy | C++ | ✅ |
+| 1 | Merge Sorted Array | Easy | C | ✅ |
 | 49 | Group Anagrams | Medium | Python | ✅ |
 | 297 | Serialize/Deserialize Binary Tree | Hard | Java | ✅ |
