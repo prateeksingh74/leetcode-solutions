@@ -21,28 +21,32 @@ jobs:
           HARD=$(find hard -type f 2>/dev/null | wc -l)
           TOTAL=$((EASY + MEDIUM + HARD))
           LANGS=$(find easy medium hard -type f 2>/dev/null | sed 's/.*\.//' | sort -u | wc -l)
-          
+
           GOAL=150
           PERCENT=$((TOTAL * 100 / GOAL))
           DONE_BLOCKS=$((PERCENT / 5))
           EMPTY_BLOCKS=$((20 - DONE_BLOCKS))
           BAR=$(printf "%${DONE_BLOCKS}s" | tr ' ' '▓')$(printf "%${EMPTY_BLOCKS}s" | tr ' ' '░')
 
-          echo "<!-- STATS_START -->" > stats_section.md
-          echo "## 📊 Stats" >> stats_section.md
-          echo "- 🔢 Problems Solved: $TOTAL / $GOAL" >> stats_section.md
-          echo "  - 🟢 Easy: $EASY" >> stats_section.md
-          echo "  - 🟠 Medium: $MEDIUM" >> stats_section.md
-          echo "  - 🔴 Hard: $HARD" >> stats_section.md
-          echo "- 🧩 Languages: $LANGS" >> stats_section.md
-          echo "- 🎯 Goal: Top 150 LeetCode Problems" >> stats_section.md
-          echo "  - $BAR $TOTAL/$GOAL (${PERCENT}%)" >> stats_section.md
-          echo "<!-- STATS_END -->" >> stats_section.md
+          cat <<EOF > stats_section.md
+<!-- STATS_START -->
+## 📊 Stats
+- 🔢 Problems Solved: $TOTAL / $GOAL
+  - 🟢 Easy: $EASY
+  - 🟠 Medium: $MEDIUM
+  - 🔴 Hard: $HARD
+- 🧩 Languages: $LANGS
+- 🎯 Goal: Top 150 LeetCode Problems
+  - $BAR $TOTAL/$GOAL (${PERCENT}%)
+<!-- STATS_END -->
+EOF
 
-          echo "<!-- TRACKER_START -->" > tracker_section.md
-          echo "## 📅 Progress Tracker" >> tracker_section.md
-          echo "| # | Title | Difficulty | Language | Status |" >> tracker_section.md
-          echo "|---|-------|------------|----------|--------|" >> tracker_section.md
+          cat <<EOF > tracker_section.md
+<!-- TRACKER_START -->
+## 📅 Progress Tracker
+| # | Title | Difficulty | Language | Status |
+|---|-------|------------|----------|--------|
+EOF
 
           for f in $(find easy medium hard -type f); do
             NUM=$(echo $f | sed -E 's/.*\/([0-9]+)-.*/\1/')
@@ -69,5 +73,5 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add README.md
-          git commit -m "🧮 Auto-update stats, progress bar, and tracker"
+          git commit -m "🧮 Fix encoding: Update stats + tracker"
           git push
