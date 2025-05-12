@@ -5,6 +5,7 @@ on:
     branches: [main]
   schedule:
     - cron: '0 0 * * *'  # Runs daily
+  workflow_dispatch:
 
 jobs:
   update:
@@ -15,15 +16,22 @@ jobs:
 
       - name: Count Problems and Languages
         run: |
-          SOLVED=$(find easy medium hard -type f | wc -l)
-          LANGS=$(find easy medium hard -type f | sed 's/.*\.//' | sort | uniq | wc -l)
-          sed -i "s/Problems Solved: .*/Problems Solved: $SOLVED/" README.md
-          sed -i "s/Languages: .*/Languages: $LANGS/" README.md
+          EASY=$(find easy -type f 2>/dev/null | wc -l)
+          MEDIUM=$(find medium -type f 2>/dev/null | wc -l)
+          HARD=$(find hard -type f 2>/dev/null | wc -l)
+          TOTAL=$((EASY + MEDIUM + HARD))
+          LANGS=$(find easy medium hard -type f 2>/dev/null | sed 's/.*\.//' | sort | uniq | wc -l)
+
+          # Remove old stats block (if present)
+          sed -i '/🔢 Problems Solved:/,/🧩 Languages:/d' README.md
+
+          # Insert updated stats after first heading
+          sed -i "/^# .*$/a \\\n## 📊 Stats\n- 🔢 Problems Solved: $TOTAL\n  - 🟢 Easy: $EASY\n  - 🟠 Medium: $MEDIUM\n  - 🔴 Hard: $HARD\n- 🧩 Languages: $LANGS\n" README.md
 
       - name: Commit and Push
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add README.md
-          git commit -m "Auto-update problem count and languages"
+          git commit -m "🧮 Auto-update problem count, difficulty breakdown, and languages"
           git push
