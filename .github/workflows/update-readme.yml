@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: '0 0 * * *'  # Runs daily
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 jobs:
@@ -22,16 +22,28 @@ jobs:
           TOTAL=$((EASY + MEDIUM + HARD))
           LANGS=$(find easy medium hard -type f 2>/dev/null | sed 's/.*\.//' | sort | uniq | wc -l)
 
-          # Remove old stats block (if present)
-          sed -i '/🔢 Problems Solved:/,/🧩 Languages:/d' README.md
+          NEW_STATS="<!-- STATS_START -->
+## 📊 Stats
+- 🔢 Problems Solved: $TOTAL
+  - 🟢 Easy: $EASY
+  - 🟠 Medium: $MEDIUM
+  - 🔴 Hard: $HARD
+- 🧩 Languages: $LANGS
+<!-- STATS_END -->"
 
-          # Insert updated stats after first heading
-          sed -i "/^# .*$/a \\\n## 📊 Stats\n- 🔢 Problems Solved: $TOTAL\n  - 🟢 Easy: $EASY\n  - 🟠 Medium: $MEDIUM\n  - 🔴 Hard: $HARD\n- 🧩 Languages: $LANGS\n" README.md
+          # Replace or insert the block
+          if grep -q "<!-- STATS_START -->" README.md; then
+            # Replace between the markers
+            sed -i '/<!-- STATS_START -->/,/<!-- STATS_END -->/c\'"$NEW_STATS" README.md
+          else
+            # Insert after first H1 heading if block not found
+            sed -i "/^# .*$/a $NEW_STATS" README.md
+          fi
 
       - name: Commit and Push
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add README.md
-          git commit -m "🧮 Auto-update problem count, difficulty breakdown, and languages"
+          git commit -m "🧮 Auto-update stats section (clean replace)"
           git push
