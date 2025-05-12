@@ -14,36 +14,60 @@ jobs:
       - name: Clone repository
         uses: actions/checkout@v3
 
-      - name: Count Problems and Languages
+      - name: Build README Sections
         run: |
           EASY=$(find easy -type f 2>/dev/null | wc -l)
           MEDIUM=$(find medium -type f 2>/dev/null | wc -l)
           HARD=$(find hard -type f 2>/dev/null | wc -l)
           TOTAL=$((EASY + MEDIUM + HARD))
-          LANGS=$(find easy medium hard -type f 2>/dev/null | sed 's/.*\.//' | sort | uniq | wc -l)
+          LANGS=$(find easy medium hard -type f 2>/dev/null | sed 's/.*\.//' | sort -u | wc -l)
+          
+          GOAL=150
+          PERCENT=$((TOTAL * 100 / GOAL))
+          DONE_BLOCKS=$((PERCENT / 5))
+          EMPTY_BLOCKS=$((20 - DONE_BLOCKS))
+          BAR=$(printf "%${DONE_BLOCKS}s" | tr ' ' '▓')$(printf "%${EMPTY_BLOCKS}s" | tr ' ' '░')
 
-          NEW_STATS="<!-- STATS_START -->
-## 📊 Stats
-- 🔢 Problems Solved: $TOTAL
-  - 🟢 Easy: $EASY
-  - 🟠 Medium: $MEDIUM
-  - 🔴 Hard: $HARD
-- 🧩 Languages: $LANGS
-<!-- STATS_END -->"
+          echo "<!-- STATS_START -->" > stats_section.md
+          echo "## 📊 Stats" >> stats_section.md
+          echo "- 🔢 Problems Solved: $TOTAL / $GOAL" >> stats_section.md
+          echo "  - 🟢 Easy: $EASY" >> stats_section.md
+          echo "  - 🟠 Medium: $MEDIUM" >> stats_section.md
+          echo "  - 🔴 Hard: $HARD" >> stats_section.md
+          echo "- 🧩 Languages: $LANGS" >> stats_section.md
+          echo "- 🎯 Goal: Top 150 LeetCode Problems" >> stats_section.md
+          echo "  - $BAR $TOTAL/$GOAL (${PERCENT}%)" >> stats_section.md
+          echo "<!-- STATS_END -->" >> stats_section.md
 
-          # Replace or insert the block
-          if grep -q "<!-- STATS_START -->" README.md; then
-            # Replace between the markers
-            sed -i '/<!-- STATS_START -->/,/<!-- STATS_END -->/c\'"$NEW_STATS" README.md
-          else
-            # Insert after first H1 heading if block not found
-            sed -i "/^# .*$/a $NEW_STATS" README.md
-          fi
+          echo "<!-- TRACKER_START -->" > tracker_section.md
+          echo "## 📅 Progress Tracker" >> tracker_section.md
+          echo "| # | Title | Difficulty | Language | Status |" >> tracker_section.md
+          echo "|---|-------|------------|----------|--------|" >> tracker_section.md
+
+          for f in $(find easy medium hard -type f); do
+            NUM=$(echo $f | sed -E 's/.*\/([0-9]+)-.*/\1/')
+            TITLE=$(echo $f | sed -E 's/.*\/[0-9]+-([a-z0-9\-]+)\..*/\1/' | sed 's/-/ /g' | sed 's/\b\(.\)/\u\1/g')
+            DIFFICULTY=$(echo $f | cut -d/ -f1 | tr '[:lower:]' '[:upper:]')
+            LANG=$(echo $f | awk -F. '{print $NF}' | tr '[:lower:]' '[:upper:]')
+            echo "| $NUM | $TITLE | $DIFFICULTY | $LANG | ✅ |" >> tracker_section.md
+          done
+
+          echo "<!-- TRACKER_END -->" >> tracker_section.md
+
+      - name: Update README.md
+        run: |
+          sed -i '/<!-- STATS_START -->/,/<!-- STATS_END -->/d' README.md
+          sed -i '/^# .*$/a <!-- STATS_START -->\n<!-- STATS_END -->' README.md
+          sed -i "/<!-- STATS_START -->/r stats_section.md" README.md
+
+          sed -i '/<!-- TRACKER_START -->/,/<!-- TRACKER_END -->/d' README.md
+          echo -e "\n<!-- TRACKER_START -->\n<!-- TRACKER_END -->" >> README.md
+          sed -i "/<!-- TRACKER_START -->/r tracker_section.md" README.md
 
       - name: Commit and Push
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add README.md
-          git commit -m "🧮 Auto-update stats section (clean replace)"
+          git commit -m "🧮 Auto-update stats, progress bar, and tracker"
           git push
