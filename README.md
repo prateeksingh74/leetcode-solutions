@@ -1,11 +1,14 @@
 # LeetCode Solutions by Prateek Singh
 
 ## 📊 Stats
-- 🔢 Problems Solved: 1
+- 🔢 Problems Solved: 3
   - 🟢 Easy: 1
-  - 🟠 Medium: 0
-  - 🔴 Hard: 0
+  - 🟠 Medium: 1
+  - 🔴 Hard: 1
 - 🧩 Languages: 1
+
+
+## 📊 Stats
 
 
 ## 📊 Stats
