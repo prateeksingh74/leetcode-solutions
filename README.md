@@ -16,9 +16,7 @@ This repository contains my solutions to LeetCode problems, organized by difficu
 ## 🧾 Problem Format
 
 Each file is named as:
-\`\`\`
 [ProblemNumber]-[Case-Title].[ext]
-\`\`\`
 
 ## 📅 Progress Tracker
 | # | Title | Difficulty | Language | Status |
