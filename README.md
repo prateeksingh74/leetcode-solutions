@@ -2,13 +2,14 @@
 <!-- STATS_START -->
 <!-- STATS_START -->
 ## рџ“Љ Stats
-- рџ”ў Problems Solved: 4 / 150
-  - рџџў Easy: 2
+- рџ”ў Problems Solved: 3 / 150
+  - рџџў Easy: 1
   - рџџ  Medium: 1
   - рџ”ґ Hard: 1
 - рџ§© Languages: 1
 - рџЋЇ Goal: Top 150 LeetCode Problems
-  - вввввввввввввввввввв 4/150 (2%)
+  - вввввввввввввввввввв 3/150 (2%)
+<!-- STATS_END -->
 <!-- STATS_END -->
 <!-- STATS_END -->
 
@@ -29,13 +30,14 @@ Each solution includes code, a short explanation to the solution, and complexity
 Each file is named as:
 [difficulty]/[problem-number]-[kebab-case-title].[ext]
 
+<!-- TRACKER_END -->
+
 <!-- TRACKER_START -->
 <!-- TRACKER_START -->
 ## рџ“… Progress Tracker
 | # | Title | Difficulty | Language | Status |
 |---|-------|------------|----------|--------|
 | 88 | Merge Sorted Array | EASY | C | вњ… |
-| 27 | Remove Element | EASY | C | вњ… |
 | 80 | Remove Duplicates From Sorted Array 2 | MEDIUM | C | вњ… |
 | 135 | Candy | HARD | C | вњ… |
 <!-- TRACKER_END -->
