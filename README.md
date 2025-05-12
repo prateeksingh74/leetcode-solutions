@@ -1,5 +1,13 @@
 # LeetCode Solutions by Prateek Singh
 
+## 📊 Stats
+- 🔢 Problems Solved: 3
+  - 🟢 Easy: 1
+  - 🟠 Medium: 1
+  - 🔴 Hard: 1
+- 🧩 Languages: 3
+
+
 This repository contains my solutions to LeetCode problems, organized by difficulty. Each solution includes code and, where helpful, explanations and complexity analysis.
 
 ## 📊 Stats
