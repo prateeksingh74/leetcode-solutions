@@ -75,3 +75,4 @@ EOF
           git add README.md
           git commit -m "🧮 Fix encoding: Update stats + tracker"
           git push
+
