@@ -1,11 +1,11 @@
-# 🧠 LeetCode Solutions by Prateek Singh
+# LeetCode Solutions by Prateek Singh
 
 This repository contains my solutions to LeetCode problems, organized by difficulty. Each solution includes code and, where helpful, explanations and complexity analysis.
 
 ## 📊 Stats
-- 🔢 Problems Solved: 3 (to start)
-- 🧩 Languages: C++, Python, Java
-- 🚀 Goal: Solve 200+ questions by [Date]
+- Problems Solved: 3 (to start)
+- Languages: C, Python, Java
+- Goal: Solve 200+ questions by July 12
 
 ## 🗂️ Folders
 - `easy/` – beginner-level problems
@@ -17,33 +17,7 @@ This repository contains my solutions to LeetCode problems, organized by difficu
 
 Each file is named as:
 \`\`\`
-[ProblemNumber]-[Kebab-Case-Title].[ext]
-\`\`\`
-
-### Example:
-\`\`\`cpp
-// File: easy/0001-two-sum.cpp
-
-/*
-1. Two Sum
-LeetCode Problem Link: https://leetcode.com/problems/two-sum/
-
-Approach: Hash map
-Time Complexity: O(n)
-Space Complexity: O(n)
-*/
-
-class Solution {
-public:
-    vector<int> twoSum(vector<int>& nums, int target) {
-        unordered_map<int, int> m;
-        for (int i = 0; i < nums.size(); ++i) {
-            if (m.count(target - nums[i])) return {m[target - nums[i]], i};
-            m[nums[i]] = i;
-        }
-        return {};
-    }
-};
+[ProblemNumber]-[Case-Title].[ext]
 \`\`\`
 
 ## 📅 Progress Tracker
