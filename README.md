@@ -1,28 +1,13 @@
 # LeetCode Solutions by Prateek Singh
 
-## 📊 Stats
-- 🔢 Problems Solved: 1
-  - 🟢 Easy: 1
-  - 🟠 Medium: 0
-  - 🔴 Hard: 0
-- 🧩 Languages: 1
-
-
-## 📊 Stats
-
-
-## 📊 Stats
-
-
-## 📊 Stats
-
-
-## 📊 Stats
-
-
 This repository contains my solutions to LeetCode problems for the Top Interview 150 Questions, organized by difficulty. Each solution includes code, a short explanation to the solution, and complexity analysis.
 
 ## 📊 Stats
+- 🔢 Problems Solved: 3
+  - 🟢 Easy: 1
+  - 🟠 Medium: 1
+  - 🔴 Hard: 1
+- 🧩 Languages: 1
 
 ## 🗂️ Folders
 - `easy/` – beginner-level problems
