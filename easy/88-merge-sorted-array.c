@@ -1,5 +1,5 @@
 /*
- * 001 - Merge Sorted Array - Easy
+ * 88 - Merge Sorted Array - Easy
  * https://leetcode.com/problems/merge-sorted-array/
  */
 
