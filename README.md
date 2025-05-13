@@ -12,6 +12,7 @@
 <!-- STATS_END -->
 <!-- STATS_END -->
 <!-- STATS_END -->
+<!-- STATS_END -->
 
 
 
@@ -29,6 +30,8 @@ Each solution includes code, a short explanation to the solution, and complexity
 
 Each file is named as:
 [difficulty]/[problem-number]-[kebab-case-title].[ext]
+
+<!-- TRACKER_END -->
 
 <!-- TRACKER_END -->
 
