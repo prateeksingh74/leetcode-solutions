@@ -34,8 +34,8 @@ jobs:
 
           printf "%s\n" \
           "<!-- STATS_START -->" \
-          "## 📊 Stats" \
-          "- 🔢 Problems Solved: $TOTAL / $GOAL" \
+          "## :boy: Stats" \
+          "- :girl: Problems Solved: $TOTAL / $GOAL" \
           "  - 🟢 Easy: $EASY" \
           "  - 🟠 Medium: $MEDIUM" \
           "  - 🔴 Hard: $HARD" \
