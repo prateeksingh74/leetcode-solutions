@@ -46,7 +46,7 @@ jobs:
           "  - :red_circle: Hard: $HARD" \
           "- :jigsaw: Languages: $LANGS" \
           "- :dart: Goal: Top 150 LeetCode Problems" \
-          "  - $BAR $TOTAL/$GOAL (${PERCENT}%%)" \
+          "  - $BAR $TOTAL/$GOAL (${PERCENT}%)" \
           "<!-- STATS_END -->" > stats_section.md
 
           # Write tracker section
