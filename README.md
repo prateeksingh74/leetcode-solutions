@@ -1,7 +1,7 @@
 # рџ§  LeetCode Solutions by Prateek Singh
 <!-- STATS_START -->
 <!-- STATS_START -->
-## рџ“Љ Stats
+## :boy: Stats
 - рџ”ў Problems Solved: 4 / 150
   - рџџў Easy: 2
   - рџџ  Medium: 1
@@ -9,6 +9,7 @@
 - рџ§© Languages: 1
 - рџЋЇ Goal: Top 150 LeetCode Problems
   - вввввввввввввввввввв 4/150 (2%)
+<!-- STATS_END -->
 <!-- STATS_END -->
 <!-- STATS_END -->
 <!-- STATS_END -->
@@ -45,6 +46,8 @@ Each solution file is named using this pattern:
 ## рџљЂ Goal
 
 рџЋЇ Solve all **Top 150 LeetCode problems** and build a strong, organized GitHub portfolio.
+
+<!-- TRACKER_END -->
 
 <!-- TRACKER_END -->
 
