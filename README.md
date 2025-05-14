@@ -7,8 +7,9 @@
   - :red_circle: Hard: 1
 - :jigsaw: Languages: 1
 - :dart: Goal: Top 150 LeetCode Problems
-  - :white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square: 4/150 (2%%)
+  - :white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square: 4/150 (2%)
 <!-- STATS_END -->
+
 
 
 
@@ -83,6 +84,7 @@ Each solution file is named using this pattern:
 | 80 | Remove Duplicates From Sorted Array2 | MEDIUM | C | :white_check_mark: |
 | 135 | Candy | HARD | C | :white_check_mark: |
 <!-- TRACKER_END -->
+
 
 
 
