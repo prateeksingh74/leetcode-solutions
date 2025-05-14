@@ -2,13 +2,14 @@
 <!-- STATS_START -->
 <!-- STATS_START -->
 ## рџ“Љ Stats
-- рџ”ў Problems Solved: 5 / 150
-  - рџџў Easy: 3
+- рџ”ў Problems Solved: 4 / 150
+  - рџџў Easy: 2
   - рџџ  Medium: 1
   - рџ”ґ Hard: 1
-- рџ§© Languages: 2
+- рџ§© Languages: 1
 - рџЋЇ Goal: Top 150 LeetCode Problems
-  - вввввввввввввввввввв 5/150 (3%)
+  - вввввввввввввввввввв 4/150 (2%)
+<!-- STATS_END -->
 <!-- STATS_END -->
 <!-- STATS_END -->
 <!-- STATS_END -->
@@ -55,14 +56,15 @@ Each solution file is named using this pattern:
 
 <!-- TRACKER_END -->
 
+<!-- TRACKER_END -->
+
 <!-- TRACKER_START -->
 <!-- TRACKER_START -->
 ## рџ“… Progress Tracker
 | # | Title | Difficulty | Language | Status |
 |---|-------|------------|----------|--------|
-| 0123 | Worst Time To Buy And Sell Stock Ii | EASY | PY | вњ… |
+| 27 | Remove Element | EASY | C | вњ… |
 | 88 | Merge Sorted Array | EASY | C | вњ… |
-| 0122 | Best Time To Buy And Sell Stock Ii | EASY | PY | вњ… |
 | 80 | Remove Duplicates From Sorted Array 2 | MEDIUM | C | вњ… |
 | 135 | Candy | HARD | C | вњ… |
 <!-- TRACKER_END -->
