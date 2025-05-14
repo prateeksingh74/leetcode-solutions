@@ -1,14 +1,15 @@
 # LeetCode Solutions by Prateek Singh
 <!-- STATS_START -->
 ## :bar_chart: Stats
-- :1234: Problems Solved: 6 / 150
+- :1234: Problems Solved: 7 / 150
   - :green_circle: Easy: 3
   - :orange_circle: Medium: 2
-  - :red_circle: Hard: 1
+  - :red_circle: Hard: 2
 - :jigsaw: Languages: 1
 - :dart: Goal: Top 150 LeetCode Problems
-  - :white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square: 6/150 (4%%)
+  - :white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square: 7/150 (4%%)
 <!-- STATS_END -->
+
 
 
 
@@ -78,8 +79,10 @@ Each solution file is named using this pattern:
 | 123 | Test File | EASY | C | :white_check_mark: |
 | 123 | Test | MEDIUM | C | :white_check_mark: |
 | 80 | Remove Duplicates From Sorted Array 2 | MEDIUM | C | :white_check_mark: |
+| 123 | Last Test | HARD | C | :white_check_mark: |
 | 135 | Candy | HARD | C | :white_check_mark: |
 <!-- TRACKER_END -->
+
 
 
 
