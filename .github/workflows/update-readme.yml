@@ -17,9 +17,9 @@ jobs:
       - name: Build README Sections
         shell: bash
         run: |
-          EASY=$(find easy -type f 2>/dev/null | wc -l)
-          MEDIUM=$(find medium -type f 2>/dev/null | wc -l)
-          HARD=$(find hard -type f 2>/dev/null | wc -l)
+          [ -d easy ] && EASY=$(find easy -type f 2>/dev/null | wc -l) || EASY=0
+          [ -d medium ] && MEDIUM=$(find medium -type f 2>/dev/null | wc -l) || MEDIUM=0
+          [ -d hard ] && HARD=$(find hard -type f 2>/dev/null | wc -l) || HARD=0
           TOTAL=$((EASY + MEDIUM + HARD))
           LANGS=$(find easy medium hard -type f 2>/dev/null | sed 's/.*\.//' | sort -u | wc -l)
 
@@ -36,7 +36,6 @@ jobs:
             BAR+=":white_large_square:"
           done
 
-          # Write stats section
           printf "%s\n" \
           "<!-- STATS_START -->" \
           "## :bar_chart: Stats" \
@@ -49,7 +48,6 @@ jobs:
           "  - $BAR $TOTAL/$GOAL (${PERCENT}%)" \
           "<!-- STATS_END -->" > stats_section.md
 
-          # Write tracker section
           printf "%s\n" \
           "<!-- TRACKER_START -->" \
           "## :calendar: Progress Tracker" \
@@ -61,7 +59,16 @@ jobs:
             TITLE=$(echo $f | sed -E 's/.*\/[0-9]+-([a-z0-9\-]+)\..*/\1/' | sed 's/-/ /g' | sed 's/\b\(.\)/\u\1/g')
             DIFFICULTY=$(echo $f | cut -d/ -f1 | tr '[:lower:]' '[:upper:]')
             LANG=$(echo $f | awk -F. '{print $NF}' | tr '[:lower:]' '[:upper:]')
-            printf "| %s | %s | %s | %s | :white_check_mark: |\n" "$NUM" "$TITLE" "$DIFFICULTY" "$LANG" >> tracker_section.md
+
+            if [ ! -s "$f" ]; then
+              STATUS=":red_circle:"
+            elif grep -iq "TODO" "$f"; then
+              STATUS=":orange_circle:"
+            else
+              STATUS=":white_check_mark:"
+            fi
+
+            printf "| %s | %s | %s | %s | %s |\n" "$NUM" "$TITLE" "$DIFFICULTY" "$LANG" "$STATUS" >> tracker_section.md
           done
 
           echo "<!-- TRACKER_END -->" >> tracker_section.md
@@ -78,5 +85,5 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add README.md
-          git commit -m "🔄 Replace progress bar with :green_square: and :white_large_square:"
+          git commit -m "📈 Auto-update stats and progress tracker with status colors"
           git push
