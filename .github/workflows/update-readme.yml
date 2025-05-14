@@ -17,9 +17,29 @@ jobs:
       - name: Build README Sections
         shell: bash
         run: |
-          [ -d easy ] && EASY=$(find easy -type f 2>/dev/null | wc -l) || EASY=0
-          [ -d medium ] && MEDIUM=$(find medium -type f 2>/dev/null | wc -l) || MEDIUM=0
-          [ -d hard ] && HARD=$(find hard -type f 2>/dev/null | wc -l) || HARD=0
+          # Total raw files (optional if needed)
+          [ -d easy ] && EASY_TOTAL=$(find easy -type f 2>/dev/null | wc -l) || EASY_TOTAL=0
+          [ -d medium ] && MEDIUM_TOTAL=$(find medium -type f 2>/dev/null | wc -l) || MEDIUM_TOTAL=0
+          [ -d hard ] && HARD_TOTAL=$(find hard -type f 2>/dev/null | wc -l) || HARD_TOTAL=0
+
+          # Initialize counts
+          EASY=0
+          MEDIUM=0
+          HARD=0
+          TOTAL=0
+
+          # Count fully completed problems only
+          for f in $(find easy medium hard -type f); do
+            if [ -s "$f" ] && ! grep -iq "TODO" "$f"; then
+              DIFF=$(echo $f | cut -d/ -f1)
+              case $DIFF in
+                easy) EASY=$((EASY + 1));;
+                medium) MEDIUM=$((MEDIUM + 1));;
+                hard) HARD=$((HARD + 1));;
+              esac
+            fi
+          done
+
           TOTAL=$((EASY + MEDIUM + HARD))
           LANGS=$(find easy medium hard -type f 2>/dev/null | sed 's/.*\.//' | sort -u | wc -l)
 
@@ -36,6 +56,7 @@ jobs:
             BAR+=":white_large_square:"
           done
 
+          # Generate stats section
           printf "%s\n" \
           "<!-- STATS_START -->" \
           "## :bar_chart: Stats" \
@@ -48,6 +69,7 @@ jobs:
           "  - $BAR $TOTAL/$GOAL (${PERCENT}%)" \
           "<!-- STATS_END -->" > stats_section.md
 
+          # Generate tracker table
           printf "%s\n" \
           "<!-- TRACKER_START -->" \
           "## :calendar: Progress Tracker" \
@@ -85,5 +107,5 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add README.md
-          git commit -m "📈 Auto-update stats and progress tracker with status colors"
+          git commit -m "📊 Auto-update completed stats and tracker status"
           git push
