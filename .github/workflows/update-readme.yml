@@ -1,4 +1,4 @@
-name: 🛠️ Update README Stats
+name: ":hammer_and_wrench: Update README Stats"
 
 on:
   push:
@@ -71,5 +71,5 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add README.md
-          git commit -m "🔄 Auto-update stats and tracker using emoji shortcodes"
+          git commit -m ":recycle: Auto-update stats and tracker using emoji shortcodes"
           git push
