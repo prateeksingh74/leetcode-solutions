@@ -17,9 +17,6 @@ jobs:
       - name: Build README Sections
         shell: bash
         run: |
-          export LANG=en_US.UTF-8
-          export LC_ALL=en_US.UTF-8
-
           EASY=$(find easy -type f 2>/dev/null | wc -l)
           MEDIUM=$(find medium -type f 2>/dev/null | wc -l)
           HARD=$(find hard -type f 2>/dev/null | wc -l)
@@ -32,21 +29,23 @@ jobs:
           EMPTY_BLOCKS=$((20 - DONE_BLOCKS))
           BAR=$(printf "%${DONE_BLOCKS}s" | tr ' ' '▓')$(printf "%${EMPTY_BLOCKS}s" | tr ' ' '░')
 
+          # Write stats section
           printf "%s\n" \
           "<!-- STATS_START -->" \
-          "## :boy: Stats" \
-          "- :girl: Problems Solved: $TOTAL / $GOAL" \
-          "  - 🟢 Easy: $EASY" \
-          "  - 🟠 Medium: $MEDIUM" \
-          "  - 🔴 Hard: $HARD" \
-          "- 🧩 Languages: $LANGS" \
-          "- 🎯 Goal: Top 150 LeetCode Problems" \
+          "## :bar_chart: Stats" \
+          "- :1234: Problems Solved: $TOTAL / $GOAL" \
+          "  - :green_circle: Easy: $EASY" \
+          "  - :orange_circle: Medium: $MEDIUM" \
+          "  - :red_circle: Hard: $HARD" \
+          "- :jigsaw: Languages: $LANGS" \
+          "- :dart: Goal: Top 150 LeetCode Problems" \
           "  - $BAR $TOTAL/$GOAL (${PERCENT}%)" \
           "<!-- STATS_END -->" > stats_section.md
 
+          # Write tracker section
           printf "%s\n" \
           "<!-- TRACKER_START -->" \
-          "## 📅 Progress Tracker" \
+          "## :calendar: Progress Tracker" \
           "| # | Title | Difficulty | Language | Status |" \
           "|---|-------|------------|----------|--------|" > tracker_section.md
 
@@ -55,12 +54,12 @@ jobs:
             TITLE=$(echo $f | sed -E 's/.*\/[0-9]+-([a-z0-9\-]+)\..*/\1/' | sed 's/-/ /g' | sed 's/\b\(.\)/\u\1/g')
             DIFFICULTY=$(echo $f | cut -d/ -f1 | tr '[:lower:]' '[:upper:]')
             LANG=$(echo $f | awk -F. '{print $NF}' | tr '[:lower:]' '[:upper:]')
-            printf "| %s | %s | %s | %s | ✅ |\n" "$NUM" "$TITLE" "$DIFFICULTY" "$LANG" >> tracker_section.md
+            printf "| %s | %s | %s | %s | :white_check_mark: |\n" "$NUM" "$TITLE" "$DIFFICULTY" "$LANG" >> tracker_section.md
           done
 
           echo "<!-- TRACKER_END -->" >> tracker_section.md
 
-      - name: Update README.md using Perl (UTF-8 safe)
+      - name: Update README.md
         run: |
           perl -0777 -i -pe '
             s/<!-- STATS_START -->.*?<!-- STATS_END -->/`cat stats_section.md`/se;
@@ -72,5 +71,5 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add README.md
-          git commit -m "🧮 Auto-update stats/tracker (UTF-8 safe using perl)"
+          git commit -m "🔄 Auto-update stats and tracker using emoji shortcodes"
           git push
