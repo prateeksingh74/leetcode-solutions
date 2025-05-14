@@ -1,4 +1,4 @@
-name: ":hammer_and_wrench: Update README Stats"
+name: 🛠️ Update README Stats
 
 on:
   push:
@@ -25,9 +25,16 @@ jobs:
 
           GOAL=150
           PERCENT=$((TOTAL * 100 / GOAL))
-          DONE_BLOCKS=$((PERCENT / 5))
-          EMPTY_BLOCKS=$((20 - DONE_BLOCKS))
-          BAR=$(printf "%${DONE_BLOCKS}s" | tr ' ' '▓')$(printf "%${EMPTY_BLOCKS}s" | tr ' ' '░')
+          FILLED_BLOCKS=$((PERCENT / 5))
+          EMPTY_BLOCKS=$((20 - FILLED_BLOCKS))
+
+          BAR=""
+          for ((i = 0; i < FILLED_BLOCKS; i++)); do
+            BAR+=":green_square:"
+          done
+          for ((i = 0; i < EMPTY_BLOCKS; i++)); do
+            BAR+=":white_large_square:"
+          done
 
           # Write stats section
           printf "%s\n" \
@@ -39,7 +46,7 @@ jobs:
           "  - :red_circle: Hard: $HARD" \
           "- :jigsaw: Languages: $LANGS" \
           "- :dart: Goal: Top 150 LeetCode Problems" \
-          "  - $BAR $TOTAL/$GOAL (${PERCENT}%)" \
+          "  - $BAR $TOTAL/$GOAL (${PERCENT}%%)" \
           "<!-- STATS_END -->" > stats_section.md
 
           # Write tracker section
@@ -71,5 +78,5 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add README.md
-          git commit -m ":recycle: Auto-update stats and tracker using emoji shortcodes"
+          git commit -m "🔄 Replace progress bar with :green_square: and :white_large_square:"
           git push
