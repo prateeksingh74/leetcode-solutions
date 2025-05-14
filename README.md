@@ -7,7 +7,7 @@
   - :red_circle: Hard: 1
 - :jigsaw: Languages: 1
 - :dart: Goal: Top 150 LeetCode Problems
-  - ‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚‚ 4/150 (2%)
+  - √¢√¢√¢√¢√¢√¢√¢√¢√¢√¢√¢√¢√¢√¢√¢√¢√¢√¢√¢√¢ 4/150 (2%)
 <!-- STATS_END -->
 
 
@@ -32,10 +32,10 @@ Each solution includes code, a short explanation, and complexity analysis.
 
 ## :card_index_dividers: Folders
 
-- `easy/` √¢‚Ç¨‚Äú beginner-level problems  
-- `medium/` √¢‚Ç¨‚Äú intermediate challenges  
-- `hard/` √¢‚Ç¨‚Äú advanced questions  
-- `utils/` √¢‚Ç¨‚Äú code templates or reusable snippets
+- `easy/` beginner-level problems  
+- `medium/` intermediate challenges  
+- `hard/` advanced questions  
+- `utils/` code templates or reusable snippets
 
 ---
 
