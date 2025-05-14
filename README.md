@@ -7,7 +7,7 @@
   - :red_circle: Hard: 1
 - :jigsaw: Languages: 1
 - :dart: Goal: Top 150 LeetCode Problems
-  - :white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square: 3/150 (2%%)
+  - :white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square: 3/150 (2%)
 <!-- STATS_END -->
 
 
