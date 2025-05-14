@@ -1,4 +1,4 @@
-# 🧠 LeetCode Solutions by Prateek Singh
+# LeetCode Solutions by Prateek Singh
 <!-- STATS_START -->
 ## :bar_chart: Stats
 - :1234: Problems Solved: 4 / 150
@@ -7,7 +7,7 @@
   - :red_circle: Hard: 1
 - :jigsaw: Languages: 1
 - :dart: Goal: Top 150 LeetCode Problems
-  - �������������������� 4/150 (2%)
+  - ââââââââââââââââââââ 4/150 (2%)
 <!-- STATS_END -->
 
 
@@ -29,16 +29,16 @@ Each solution includes code, a short explanation, and complexity analysis.
 
 ---
 
-## 🗂️ Folders
+## :card_index_dividers: Folders
 
-- `easy/` – beginner-level problems  
-- `medium/` – intermediate challenges  
-- `hard/` – advanced questions  
-- `utils/` – code templates or reusable snippets
+- `easy/` â€“ beginner-level problems  
+- `medium/` â€“ intermediate challenges  
+- `hard/` â€“ advanced questions  
+- `utils/` â€“ code templates or reusable snippets
 
 ---
 
-## 🧾 File Naming Format
+## :receipt: File Naming Format
 
 Each solution file is named using this pattern:
 
@@ -46,9 +46,9 @@ Each solution file is named using this pattern:
 
 ---
 
-## 🚀 Goal
+## :rocket: Goal
 
-🎯 Solve all **Top 150 LeetCode problems** and build a strong, organized GitHub portfolio.
+- Solve all **Top 150 LeetCode problems** and build a strong, organized GitHub portfolio.
 
 <!-- TRACKER_END -->
 
