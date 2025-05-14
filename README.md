@@ -27,6 +27,7 @@
 
 
 
+
 <!-- STATS_END -->
 <!-- STATS_END -->
 <!-- STATS_END -->
@@ -83,9 +84,10 @@ Each solution file is named using this pattern:
 | # | Title | Difficulty | Language | Status |
 |---|-------|------------|----------|--------|
 | 88 | Merge Sorted Array | EASY | C | :white_check_mark: |
-| 80 | Remove Duplicates From Sorted Array2 | MEDIUM | C | :red_circle: |
+| 80 | Remove Duplicates From Sorted Array2 | MEDIUM | C | :orange_circle: |
 | 135 | Candy | HARD | C | :red_circle: |
 <!-- TRACKER_END -->
+
 
 
 
