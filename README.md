@@ -15,6 +15,7 @@
 <!-- STATS_END -->
 <!-- STATS_END -->
 <!-- STATS_END -->
+<!-- STATS_END -->
 
 
 
@@ -43,6 +44,8 @@ Each solution file is named using this pattern:
 ## 🚀 Goal
 
 🎯 Solve all **Top 150 LeetCode problems** and build a strong, organized GitHub portfolio.
+
+<!-- TRACKER_END -->
 
 <!-- TRACKER_END -->
 
