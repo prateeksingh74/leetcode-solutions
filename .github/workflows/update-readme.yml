@@ -32,10 +32,9 @@ jobs:
           EMPTY_BLOCKS=$((20 - DONE_BLOCKS))
           BAR=$(printf "%${DONE_BLOCKS}s" | tr ' ' '▓')$(printf "%${EMPTY_BLOCKS}s" | tr ' ' '░')
 
-          # Write stats section
           printf "%s\n" \
           "<!-- STATS_START -->" \
-          "## :boy: Stats" \
+          "## 📊 Stats" \
           "- 🔢 Problems Solved: $TOTAL / $GOAL" \
           "  - 🟢 Easy: $EASY" \
           "  - 🟠 Medium: $MEDIUM" \
@@ -45,7 +44,6 @@ jobs:
           "  - $BAR $TOTAL/$GOAL (${PERCENT}%)" \
           "<!-- STATS_END -->" > stats_section.md
 
-          # Write tracker section
           printf "%s\n" \
           "<!-- TRACKER_START -->" \
           "## 📅 Progress Tracker" \
@@ -62,20 +60,17 @@ jobs:
 
           echo "<!-- TRACKER_END -->" >> tracker_section.md
 
-      - name: Update README.md
+      - name: Update README.md using Perl (UTF-8 safe)
         run: |
-          sed -i '/<!-- STATS_START -->/,/<!-- STATS_END -->/d' README.md
-          sed -i '/^# .*$/a <!-- STATS_START -->\n<!-- STATS_END -->' README.md
-          sed -i "/<!-- STATS_START -->/r stats_section.md" README.md
-
-          sed -i '/<!-- TRACKER_START -->/,/<!-- TRACKER_END -->/d' README.md
-          echo -e "\n<!-- TRACKER_START -->\n<!-- TRACKER_END -->" >> README.md
-          sed -i "/<!-- TRACKER_START -->/r tracker_section.md" README.md
+          perl -0777 -i -pe '
+            s/<!-- STATS_START -->.*?<!-- STATS_END -->/`cat stats_section.md`/se;
+            s/<!-- TRACKER_START -->.*?<!-- TRACKER_END -->/`cat tracker_section.md`/se;
+          ' README.md
 
       - name: Commit and Push
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add README.md
-          git commit -m "🧮 Auto-update stats and progress tracker (UTF-8 safe)"
+          git commit -m "🧮 Auto-update stats/tracker (UTF-8 safe using perl)"
           git push
