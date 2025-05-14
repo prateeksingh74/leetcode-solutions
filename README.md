@@ -1,7 +1,6 @@
 # рџ§  LeetCode Solutions by Prateek Singh
 <!-- STATS_START -->
-<!-- STATS_START -->
-## :boy: Stats
+## рџ“Љ Stats
 - рџ”ў Problems Solved: 4 / 150
   - рџџў Easy: 2
   - рџџ  Medium: 1
@@ -10,6 +9,7 @@
 - рџЋЇ Goal: Top 150 LeetCode Problems
   - вввввввввввввввввввв 4/150 (2%)
 <!-- STATS_END -->
+
 <!-- STATS_END -->
 <!-- STATS_END -->
 <!-- STATS_END -->
@@ -62,7 +62,6 @@ Each solution file is named using this pattern:
 <!-- TRACKER_END -->
 
 <!-- TRACKER_START -->
-<!-- TRACKER_START -->
 ## рџ“… Progress Tracker
 | # | Title | Difficulty | Language | Status |
 |---|-------|------------|----------|--------|
@@ -71,4 +70,5 @@ Each solution file is named using this pattern:
 | 80 | Remove Duplicates From Sorted Array 2 | MEDIUM | C | вњ… |
 | 135 | Candy | HARD | C | вњ… |
 <!-- TRACKER_END -->
+
 <!-- TRACKER_END -->
