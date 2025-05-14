@@ -35,7 +35,7 @@ jobs:
           # Write stats section
           printf "%s\n" \
           "<!-- STATS_START -->" \
-          "## 📊 Stats" \
+          "## :boy: Stats" \
           "- 🔢 Problems Solved: $TOTAL / $GOAL" \
           "  - 🟢 Easy: $EASY" \
           "  - 🟠 Medium: $MEDIUM" \
