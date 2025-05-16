@@ -1,14 +1,15 @@
 # LeetCode Solutions by Prateek Singh
 <!-- STATS_START -->
 ## :bar_chart: Stats
-- :1234: Problems Solved: 2 / 150
-  - :green_circle: Easy: 2
+- :1234: Problems Solved: 3 / 150
+  - :green_circle: Easy: 3
   - :orange_circle: Medium: 0
   - :red_circle: Hard: 0
 - :jigsaw: Languages: 1
 - :dart: Goal: Top 150 LeetCode Problems
-  - :white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square: 2/150 (1%)
+  - :white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square: 3/150 (2%)
 <!-- STATS_END -->
+
 
 
 
@@ -89,11 +90,13 @@ Each solution file is named using this pattern:
 ## :calendar: Progress Tracker
 | # | Title | Difficulty | Language | Status |
 |---|-------|------------|----------|--------|
+| 26 | Remove Duplicates From Sorted Array | EASY | C | :white_check_mark: |
 | 27 | Remove Element | EASY | C | :white_check_mark: |
 | 88 | Merge Sorted Array | EASY | C | :white_check_mark: |
 | 80 | Remove Duplicates From Sorted Array2 | MEDIUM | C | :orange_circle: |
 | 135 | Candy | HARD | C | :red_circle: |
 <!-- TRACKER_END -->
+
 
 
 
