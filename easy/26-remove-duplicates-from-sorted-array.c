@@ -4,7 +4,7 @@
  */
 
 /*
- * Same thing as problem 27 just a little different. Refer to problem 26.
+ * Same thing as problem 27 just a little different. Refer to problem 27.
  */
 
 int removeDuplicates(int* nums, int numsSize) {
