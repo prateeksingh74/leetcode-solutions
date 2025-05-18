@@ -1,14 +1,15 @@
 # LeetCode Solutions by Prateek Singh
 <!-- STATS_START -->
 ## :bar_chart: Stats
-- :1234: Problems Solved: 5 / 150
+- :1234: Problems Solved: 6 / 150
   - :green_circle: Easy: 4
-  - :orange_circle: Medium: 1
+  - :orange_circle: Medium: 2
   - :red_circle: Hard: 0
 - :jigsaw: Languages: 1
 - :dart: Goal: Top 150 LeetCode Problems
-  - :white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square: 5/150 (3%)
+  - :white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square: 6/150 (4%)
 <!-- STATS_END -->
+
 
 
 
@@ -99,9 +100,11 @@ Each solution file is named using this pattern:
 | 169 | Majority Element | EASY | C | :white_check_mark: |
 | 27 | Remove Element | EASY | C | :white_check_mark: |
 | 88 | Merge Sorted Array | EASY | C | :white_check_mark: |
+| 189 | Rotate Array | MEDIUM | C | :white_check_mark: |
 | 80 | Remove Duplicates From Sorted Array2 | MEDIUM | C | :white_check_mark: |
 | 135 | Candy | HARD | C | :red_circle: |
 <!-- TRACKER_END -->
+
 
 
 
