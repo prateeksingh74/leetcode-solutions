@@ -1,14 +1,15 @@
 # LeetCode Solutions by Prateek Singh
 <!-- STATS_START -->
 ## :bar_chart: Stats
-- :1234: Problems Solved: 12 / 150
-  - :green_circle: Easy: 7
+- :1234: Problems Solved: 13 / 150
+  - :green_circle: Easy: 8
   - :orange_circle: Medium: 5
   - :red_circle: Hard: 0
 - :jigsaw: Languages: 2
 - :dart: Goal: Top 150 LeetCode Problems
-  - :green_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square: 12/150 (8%)
+  - :green_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square: 13/150 (8%)
 <!-- STATS_END -->
+
 
 
 
@@ -165,6 +166,7 @@ Each solution file is named using this pattern:
 | 217 | Valid Anagram | EASY | PY | :white_check_mark: |
 | 27 | Remove Element | EASY | C | :white_check_mark: |
 | 217 | Contains Duplicates | EASY | PY | :white_check_mark: |
+| 1 | Two Sum | EASY | PY | :white_check_mark: |
 | 88 | Merge Sorted Array | EASY | C | :white_check_mark: |
 | 169 | Majority Element | EASY | C | :white_check_mark: |
 | 55 | Jump Game | MEDIUM | C | :white_check_mark: |
@@ -175,6 +177,7 @@ Each solution file is named using this pattern:
 | 80 | Remove Duplicates From Sorted Array2 | MEDIUM | C | :white_check_mark: |
 | 135 | Candy | HARD | C | :red_circle: |
 <!-- TRACKER_END -->
+
 
 
 
