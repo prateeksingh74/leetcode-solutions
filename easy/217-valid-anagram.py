@@ -5,6 +5,7 @@
 
 /*
  * Using sorted function in python and comparing the two strings.
+ * Hi
  */
 
 class Solution:
