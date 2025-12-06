@@ -1,14 +1,15 @@
 # LeetCode Solutions by Prateek Singh
 <!-- STATS_START -->
 ## :bar_chart: Stats
-- :1234: Problems Solved: 14 / 150
-  - :green_circle: Easy: 9
+- :1234: Problems Solved: 15 / 150
+  - :green_circle: Easy: 10
   - :orange_circle: Medium: 5
   - :red_circle: Hard: 0
 - :jigsaw: Languages: 2
 - :dart: Goal: Top 150 LeetCode Problems
-  - :green_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square: 14/150 (9%)
+  - :green_square::green_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square: 15/150 (10%)
 <!-- STATS_END -->
+
 
 
 
@@ -315,6 +316,7 @@ Each solution file is named using this pattern:
 | 27 | Remove Element | EASY | C | :white_check_mark: |
 | 1 | Two Sum | EASY | PY | :white_check_mark: |
 | 129 | Max Profit | EASY | C | :white_check_mark: |
+| 1710 | Maximum Units On A Truck | EASY | PY | :white_check_mark: |
 | 88 | Merge Sorted Array | EASY | C | :white_check_mark: |
 | 1200 | Minimum Absolute Difference | EASY | PY | :white_check_mark: |
 | 169 | Majority Element | EASY | C | :white_check_mark: |
@@ -328,6 +330,7 @@ Each solution file is named using this pattern:
 | 45 | Jump Game 2 | MEDIUM | C | :white_check_mark: |
 | 135 | Candy | HARD | C | :red_circle: |
 <!-- TRACKER_END -->
+
 
 
 
