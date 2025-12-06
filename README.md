@@ -1,14 +1,15 @@
 # LeetCode Solutions by Prateek Singh
 <!-- STATS_START -->
 ## :bar_chart: Stats
-- :1234: Problems Solved: 13 / 150
-  - :green_circle: Easy: 8
+- :1234: Problems Solved: 14 / 150
+  - :green_circle: Easy: 9
   - :orange_circle: Medium: 5
   - :red_circle: Hard: 0
 - :jigsaw: Languages: 2
 - :dart: Goal: Top 150 LeetCode Problems
-  - :green_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square: 13/150 (8%)
+  - :green_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square: 14/150 (9%)
 <!-- STATS_END -->
+
 
 
 
@@ -315,6 +316,7 @@ Each solution file is named using this pattern:
 | 1 | Two Sum | EASY | PY | :white_check_mark: |
 | 129 | Max Profit | EASY | C | :white_check_mark: |
 | 88 | Merge Sorted Array | EASY | C | :white_check_mark: |
+| 1200 | Minimum Absolute Difference | EASY | PY | :white_check_mark: |
 | 169 | Majority Element | EASY | C | :white_check_mark: |
 | 26 | Remove Duplicates From Sorted Array | EASY | C | :white_check_mark: |
 | 217 | Contains Duplicates | EASY | PY | :white_check_mark: |
@@ -326,6 +328,7 @@ Each solution file is named using this pattern:
 | 45 | Jump Game 2 | MEDIUM | C | :white_check_mark: |
 | 135 | Candy | HARD | C | :red_circle: |
 <!-- TRACKER_END -->
+
 
 
 
