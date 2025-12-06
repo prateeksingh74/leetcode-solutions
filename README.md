@@ -1,14 +1,15 @@
 # LeetCode Solutions by Prateek Singh
 <!-- STATS_START -->
 ## :bar_chart: Stats
-- :1234: Problems Solved: 15 / 150
+- :1234: Problems Solved: 16 / 150
   - :green_circle: Easy: 10
-  - :orange_circle: Medium: 5
+  - :orange_circle: Medium: 6
   - :red_circle: Hard: 0
 - :jigsaw: Languages: 2
 - :dart: Goal: Top 150 LeetCode Problems
-  - :green_square::green_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square: 15/150 (10%)
+  - :green_square::green_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square: 16/150 (10%)
 <!-- STATS_END -->
+
 
 
 
@@ -326,10 +327,12 @@ Each solution file is named using this pattern:
 | 122 | Max Profit 2 | MEDIUM | C | :white_check_mark: |
 | 55 | Jump Game | MEDIUM | C | :white_check_mark: |
 | 80 | Remove Duplicates From Sorted Array2 | MEDIUM | C | :white_check_mark: |
+| 12 | Integer To Roman | MEDIUM | PY | :white_check_mark: |
 | 189 | Rotate Array | MEDIUM | C | :white_check_mark: |
 | 45 | Jump Game 2 | MEDIUM | C | :white_check_mark: |
 | 135 | Candy | HARD | C | :red_circle: |
 <!-- TRACKER_END -->
+
 
 
 
