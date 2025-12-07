@@ -1,14 +1,15 @@
 # LeetCode Solutions by Prateek Singh
 <!-- STATS_START -->
 ## :bar_chart: Stats
-- :1234: Problems Solved: 16 / 150
+- :1234: Problems Solved: 17 / 150
   - :green_circle: Easy: 10
-  - :orange_circle: Medium: 6
+  - :orange_circle: Medium: 7
   - :red_circle: Hard: 0
 - :jigsaw: Languages: 2
 - :dart: Goal: Top 150 LeetCode Problems
-  - :green_square::green_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square: 16/150 (10%)
+  - :green_square::green_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square: 17/150 (11%)
 <!-- STATS_END -->
+
 
 
 
@@ -324,6 +325,7 @@ Each solution file is named using this pattern:
 | 169 | Majority Element | EASY | C | :white_check_mark: |
 | 26 | Remove Duplicates From Sorted Array | EASY | C | :white_check_mark: |
 | 217 | Contains Duplicates | EASY | PY | :white_check_mark: |
+| 1910 | Remove All Occurrences Of A Substring | MEDIUM | PY | :white_check_mark: |
 | 274 | H Index | MEDIUM | C | :orange_circle: |
 | 122 | Max Profit 2 | MEDIUM | C | :white_check_mark: |
 | 55 | Jump Game | MEDIUM | C | :white_check_mark: |
@@ -333,6 +335,7 @@ Each solution file is named using this pattern:
 | 45 | Jump Game 2 | MEDIUM | C | :white_check_mark: |
 | 135 | Candy | HARD | C | :red_circle: |
 <!-- TRACKER_END -->
+
 
 
 
