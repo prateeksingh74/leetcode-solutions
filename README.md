@@ -1,14 +1,15 @@
 # LeetCode Solutions by Prateek Singh
 <!-- STATS_START -->
 ## :bar_chart: Stats
-- :1234: Problems Solved: 18 / 150
+- :1234: Problems Solved: 19 / 150
   - :green_circle: Easy: 11
   - :orange_circle: Medium: 7
-  - :red_circle: Hard: 0
+  - :red_circle: Hard: 1
 - :jigsaw: Languages: 2
 - :dart: Goal: Top 150 LeetCode Problems
-  - :green_square::green_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square: 18/150 (12%)
+  - :green_square::green_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square: 19/150 (12%)
 <!-- STATS_END -->
+
 
 
 
@@ -336,8 +337,10 @@ Each solution file is named using this pattern:
 | 12 | Integer To Roman | MEDIUM | PY | :white_check_mark: |
 | 189 | Rotate Array | MEDIUM | C | :white_check_mark: |
 | 45 | Jump Game 2 | MEDIUM | C | :white_check_mark: |
+| 273 | Integer To English Words | HARD | PY | :white_check_mark: |
 | 135 | Candy | HARD | C | :red_circle: |
 <!-- TRACKER_END -->
+
 
 
 
