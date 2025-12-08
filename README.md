@@ -1,14 +1,15 @@
 # LeetCode Solutions by Prateek Singh
 <!-- STATS_START -->
 ## :bar_chart: Stats
-- :1234: Problems Solved: 19 / 150
-  - :green_circle: Easy: 11
+- :1234: Problems Solved: 20 / 150
+  - :green_circle: Easy: 12
   - :orange_circle: Medium: 7
   - :red_circle: Hard: 1
 - :jigsaw: Languages: 2
 - :dart: Goal: Top 150 LeetCode Problems
-  - :green_square::green_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square: 19/150 (12%)
+  - :green_square::green_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square: 20/150 (13%)
 <!-- STATS_END -->
+
 
 
 
@@ -321,6 +322,7 @@ Each solution file is named using this pattern:
 | 217 | Valid Anagram | EASY | PY | :white_check_mark: |
 | 27 | Remove Element | EASY | C | :white_check_mark: |
 | 700 | Search In A Binary Search Tree | EASY | PY | :white_check_mark: |
+| 268 | Missing Number | EASY | PY | :white_check_mark: |
 | 1 | Two Sum | EASY | PY | :white_check_mark: |
 | 129 | Max Profit | EASY | C | :white_check_mark: |
 | 1710 | Maximum Units On A Truck | EASY | PY | :white_check_mark: |
@@ -340,6 +342,7 @@ Each solution file is named using this pattern:
 | 273 | Integer To English Words | HARD | PY | :white_check_mark: |
 | 135 | Candy | HARD | C | :red_circle: |
 <!-- TRACKER_END -->
+
 
 
 
