@@ -1,14 +1,15 @@
 # LeetCode Solutions by Prateek Singh
 <!-- STATS_START -->
 ## :bar_chart: Stats
-- :1234: Problems Solved: 23 / 150
+- :1234: Problems Solved: 24 / 150
   - :green_circle: Easy: 14
-  - :orange_circle: Medium: 8
+  - :orange_circle: Medium: 9
   - :red_circle: Hard: 1
 - :jigsaw: Languages: 2
 - :dart: Goal: Top 150 LeetCode Problems
-  - :green_square::green_square::green_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square: 23/150 (15%)
+  - :green_square::green_square::green_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square: 24/150 (16%)
 <!-- STATS_END -->
+
 
 
 
@@ -344,11 +345,13 @@ Each solution file is named using this pattern:
 | 55 | Jump Game | MEDIUM | C | :white_check_mark: |
 | 80 | Remove Duplicates From Sorted Array2 | MEDIUM | C | :white_check_mark: |
 | 12 | Integer To Roman | MEDIUM | PY | :white_check_mark: |
+| 5 | Longest Palindromic Substring | MEDIUM | PY | :white_check_mark: |
 | 189 | Rotate Array | MEDIUM | C | :white_check_mark: |
 | 45 | Jump Game 2 | MEDIUM | C | :white_check_mark: |
 | 273 | Integer To English Words | HARD | PY | :white_check_mark: |
 | 135 | Candy | HARD | C | :red_circle: |
 <!-- TRACKER_END -->
+
 
 
 
