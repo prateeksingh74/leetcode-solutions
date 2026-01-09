@@ -1,14 +1,15 @@
 # LeetCode Solutions by Prateek Singh
 <!-- STATS_START -->
 ## :bar_chart: Stats
-- :1234: Problems Solved: 24 / 150
-  - :green_circle: Easy: 14
+- :1234: Problems Solved: 25 / 150
+  - :green_circle: Easy: 15
   - :orange_circle: Medium: 9
   - :red_circle: Hard: 1
 - :jigsaw: Languages: 2
 - :dart: Goal: Top 150 LeetCode Problems
-  - :green_square::green_square::green_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square: 24/150 (16%)
+  - :green_square::green_square::green_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square: 25/150 (16%)
 <!-- STATS_END -->
+
 
 
 
@@ -368,6 +369,7 @@ Each solution file is named using this pattern:
 | 169 | Majority Element | EASY | C | :white_check_mark: |
 | 26 | Remove Duplicates From Sorted Array | EASY | C | :white_check_mark: |
 | 217 | Contains Duplicates | EASY | PY | :white_check_mark: |
+| 58 | Easy/58 Length Of Last String.Py | EASY | PY | :white_check_mark: |
 | 88 | Merge Sorted Array | EASY | PY | :white_check_mark: |
 | 2 | Add Two Numbers | MEDIUM | PY | :white_check_mark: |
 | 1910 | Remove All Occurrences Of A Substring | MEDIUM | PY | :white_check_mark: |
@@ -382,6 +384,7 @@ Each solution file is named using this pattern:
 | 273 | Integer To English Words | HARD | PY | :white_check_mark: |
 | 135 | Candy | HARD | C | :red_circle: |
 <!-- TRACKER_END -->
+
 
 
 
