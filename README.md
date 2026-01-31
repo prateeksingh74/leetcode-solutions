@@ -1,14 +1,15 @@
 # LeetCode Solutions by Prateek Singh
 <!-- STATS_START -->
 ## :bar_chart: Stats
-- :1234: Problems Solved: 26 / 150
+- :1234: Problems Solved: 27 / 150
   - :green_circle: Easy: 15
-  - :orange_circle: Medium: 10
+  - :orange_circle: Medium: 11
   - :red_circle: Hard: 1
 - :jigsaw: Languages: 2
 - :dart: Goal: Top 150 LeetCode Problems
-  - :green_square::green_square::green_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square: 26/150 (17%)
+  - :green_square::green_square::green_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square: 27/150 (18%)
 <!-- STATS_END -->
+
 
 
 
@@ -397,7 +398,7 @@ Each solution file is named using this pattern:
 | 88 | Merge Sorted Array | EASY | PY | :white_check_mark: |
 | 2 | Add Two Numbers | MEDIUM | PY | :white_check_mark: |
 | 1910 | Remove All Occurrences Of A Substring | MEDIUM | PY | :white_check_mark: |
-| 274 | H Index | MEDIUM | C | :orange_circle: |
+| 274 | H Index | MEDIUM | C | :white_check_mark: |
 | 122 | Max Profit 2 | MEDIUM | C | :white_check_mark: |
 | 55 | Jump Game | MEDIUM | C | :white_check_mark: |
 | 80 | Remove Duplicates From Sorted Array2 | MEDIUM | C | :white_check_mark: |
@@ -409,6 +410,7 @@ Each solution file is named using this pattern:
 | 273 | Integer To English Words | HARD | PY | :white_check_mark: |
 | 135 | Candy | HARD | C | :red_circle: |
 <!-- TRACKER_END -->
+
 
 
 
