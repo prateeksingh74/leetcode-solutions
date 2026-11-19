@@ -1,5 +1,8 @@
 # LeetCode Solutions by Prateek Singh
 <!-- STATS_START -->
+
+Note: This repo has not been updated!
+
 ## :bar_chart: Stats
 - :1234: Problems Solved: 27 / 150
   - :green_circle: Easy: 15
