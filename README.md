@@ -1,8 +1,5 @@
 # LeetCode Solutions by Prateek Singh
 <!-- STATS_START -->
-
-Note: This repo has not been updated!
-
 ## :bar_chart: Stats
 - :1234: Problems Solved: 27 / 150
   - :green_circle: Easy: 15
@@ -12,6 +9,7 @@ Note: This repo has not been updated!
 - :dart: Goal: Top 150 LeetCode Problems
   - :green_square::green_square::green_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square: 27/150 (18%)
 <!-- STATS_END -->
+
 
 
 
@@ -705,6 +703,7 @@ Each solution file is named using this pattern:
 | 135 | Candy | HARD | C | :red_circle: |
 | 273 | Integer To English Words | HARD | PY | :white_check_mark: |
 <!-- TRACKER_END -->
+
 
 
 
